@@ -21,6 +21,7 @@ int main()
     cin>>n;
     bool primes[n+1];
     memset(primes,true,sizeof(primes));
+    primes[0]=primes[1]=false;
     sieve_of_eratosthenes(primes,n);
     for(int i=2;i<=n;i++)
     {
