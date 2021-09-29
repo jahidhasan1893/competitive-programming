@@ -58,3 +58,10 @@ int main()
     }
     return 0;
 }
+
+
+/*
+Related Problems:
+1)https://codeforces.com/contest/1366/problem/D
+
+*/
