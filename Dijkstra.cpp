@@ -42,8 +42,6 @@ int main()
 
                       int cur_d=pq.top().first;
 
-                      cout<<cur<<" "<<cur_d<<" ";
-
                       pq.pop();
 
                       for(pair<int,int> next: graph[cur])
@@ -55,8 +53,6 @@ int main()
                                  {
 
                                             dis[next.first]=cur_d+next.second;
-
-                                            cout<<dis[next.first]<<" "<<next.first;
 
                                             pq.push({dis[next.first],next.first});
 
