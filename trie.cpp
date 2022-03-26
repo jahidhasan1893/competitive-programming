@@ -50,6 +50,18 @@ void insertInTrie(string str)
     curr->isWord = true;
 }
 
+void del(node *root)
+{
+    for(int i=0; i<10; i++)
+    {
+        if(root->next[i]!=NULL)
+        {
+            del(root->next[i]);
+        }
+    }
+    delete root;
+}
+
 int main()
 {
     root = new node();
@@ -69,5 +81,6 @@ int main()
         //cout << str << "\n";
         cout << searchInTrie(str) << "\n";
     }
+    del(root);
     return 0;
 }
